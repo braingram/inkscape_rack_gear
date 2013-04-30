@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Rack Gear</_name>
+    <id>org.bg.filter.rackgear</id>
+    <dependency type="executable" location="extensions">rack_gear.py</dependency>
+    <dependency type="executable" location="extensions">inkex.py</dependency>
+    <param name="length"    type="float"   min="0.0"    max="3000.0"    _gui-text="Rack Length">100.</param>
+    <param name="spacing"    type="float" min="0.0"  max="100.0" _gui-text="Tooth Spacing">10.0</param>
+    <param name="angle"    type="float" min="-45.0" max="45.0"   _gui-text="Contact Angle">20.0</param>
+    <effect>
+	<object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Render"/>
+        </effects-menu>						    		
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">rack_gear.py</command>
+    </script>
+</inkscape-extension>

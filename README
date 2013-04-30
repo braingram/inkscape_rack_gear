@@ -1,0 +1,9 @@
+A basic inkscape extension for generating "rack" gears like those used
+in rack and pinion systems.
+
+
+Install
+------
+
+Copy rack_gear.py and rack_gear.inx to your inkscape extensions directory.
+On linux copy to (~/.config/inkscape/extensions).
